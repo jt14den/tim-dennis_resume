@@ -1,0 +1,67 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{orange}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Tim}
+\familyname{Dennis}
+%\address{4047 8th Avenue, Unit 206}{San Diego, CA}    % optional, remove the line if not wanted
+%\mobile{510-282-4204}                    % optional, remove the line if not wanted
+\email{dennis.tim@gmail.com}                      % optional, remove the line if not wanted
+\homepage{tim-dennis.com}                % optional, remove the line if not wanted
+\extrainfo{GitHub: \href{https://github.com/jt14den}{jt14den}\\
+ORCID: \href{http://orcid.org/0000-0001-6632-3812}{0000-0001-6632-3812}\\
+}
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\maketitle
+%\iffalse
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Virginia Steel}{Norman and Armena Powell University Librarian\\UCLA Library Administration\\22478 Charles E. Young Research Library\\Box 951575\\Los Angeles, CA 90095-1575}
+\date{\today}
+\opening{Dear University Librarian Steel:}
+\closing{Yours faithfully,}
+\makelettertitle
+
+I am excited to accept the offer of the career position as the Director of the UCLA Libraries Social Sciences Data Archive. I agree to the the salary and terms you outlined in the March 16, 2017 offer letter to me. Thank you for the opportunity and I look forward working with everyone at the UCLA Library.
+
+The only caveat I have is that the start date of April 17th specified in the letter will need to be flexible in order to account for the time it might take to coordinate with the movers and finalize things in San Diego. This might take a few more days than anticipated. Once we have an apartment lined up and the movers set, I should know if the the 17th will work as a start date or if we will need to push it back a few days. I'm hoping it still will work.
+
+Regardless, thank you again for the opportunity to join you and your staff at the UCLA Library.
+
+\makeletterclosing
+\fi
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+\end{document}

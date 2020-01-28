@@ -1,0 +1,165 @@
+% Tim Dennis' Resume
+% Created: 14 Jan 2012
+% Last Modified: 14 Jul 2012
+
+\documentclass[11pt,oneside]{article}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\pagestyle{plain} %was empty
+\geometry{letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in,headheight=0in,headsep=0in,footskip=.3in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+\input{sections/contact-info}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% New commands and environments
+
+% This defines how the name looks
+\newcommand{\bigname}[1]{
+	\begin{center}\fontfamily{phv}\selectfont\Huge\scshape#1\end{center}
+}
+
+% A ressection is a main section (<H1>Section</H1>)
+\newenvironment{ressection}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{itemize}
+	\vspace{3pt}
+}{
+	\end{itemize}
+}
+
+\newenvironment{restabsect}[1]{
+	\vspace{4pt}
+	{\fontfamily{phv}\selectfont\Large#1}
+	\begin{tabbing}
+	\vspace{3pt}
+}{
+	\end{tabbing}
+}
+
+% A resitem is a simple list element in a ressection (first level)
+\newcommand{\resitem}[1]{
+	\vspace{-4pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A ressubitem is a simple list element in anything but a ressection (second level)
+\newcommand{\ressubitem}[1]{
+	\vspace{-1pt}
+	\item \begin{flushleft} #1 \end{flushleft}
+}
+
+% A resbigitem is a complex list element for stuff like jobs and education:
+%  Arg 1: Name of company or university
+%  Arg 2: Location
+%  Arg 3: Title and/or date range
+\newcommand{\resbigitem}[3]{
+	\vspace{-5pt}
+	\item
+	\textbf{#1}---#2 \\
+	\textit{#3}
+}
+
+% This is a list that comes with a resbigitem
+\newenvironment{ressubsec}[3]{
+	\resbigitem{#1}{#2}{#3}
+	\vspace{-2pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+% This is a simple sublist
+\newenvironment{reslist}[1]{
+	\resitem{\textbf{#1}}
+	\vspace{-5pt}
+	\begin{itemize}
+}{
+	\end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Now for the actual document:
+
+\begin{document}
+
+\fontfamily{ppl} \selectfont
+
+% Name with horizontal rule
+\bigname{\name}
+
+\vspace{-8pt} \rule{\textwidth}{1pt}
+
+\vspace{-1pt} {\small\itshape \addr \hfill \phone; \email}
+
+\vspace{8 pt}
+
+\thispagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{Experience}
+	\begin{ressubsec}{UC San Diego Library}{La Jolla, CA}{Data Services and Collections Librarain (April, 2015 - present)}
+		\ressubitem{Provide consultation and training on data discovery and re-use, research data management, and statistical programming to students, faculty and staff.}
+		\ressubitem{Serve as UCSD Official Representative to ICPSR.}
+		\ressubitem{Administrator of local Dataverse instance.}
+		\ressubitem{Instruction}
+	\end{ressubsec}
+
+	\begin{ressubsec}{UC Berkeley Library Data Lab}{Berkeley, CA}{Research Technology and Services Specialist (August, 2006- March 2015)}
+   		\ressubitem{Build numerous Drupal sites implementing diverse domain requirements with best-practice approaches using behavioral driven development (Gherkin, Behat, Mink).}
+		\ressubitem{Write Python scripts for data acquisition, manipulation, and storage.}
+		\ressubitem{Provide numeric data/statistical information consultation to students and faculty.}
+		\ressubitem{Part of core team to open Library Data Lab in 2007.}
+	\end{ressubsec}
+
+	\begin{ressubsec}{UC Berkeley Library}{Berkeley, CA}{Web, Electronic, and Government/Numeric Data Specialist (May, 2002 - August, 2006)}
+		\ressubitem{Selected, installed, maintained, \& customized web collaboration applications including wikis, blogs, \& messaging.}
+		\ressubitem{Administered library development server including creating and managing accounts, monitoring logs, updating applications, and monitoring usage and security logs.}
+		\ressubitem{Managed multiple cross-functional teams in developing and implementing new library web based services.}
+		\ressubitem{Trained users and created instruction materials on adoption of new collaboration tools.}
+		\ressubitem{Provided numeric data/government information reference to students and faculty via IM, email \& face-to-face.}		
+	\end{ressubsec}
+	
+	\begin{ressubsec}{Information \& Service Design (formerly Center for Document Engineering)}{Berkeley, CA}{Usability Specialist/Researcher (September, 2005 - May, 2006)}
+	  \ressubitem{Completed needs assessment, usability analysis and user testing for academic web pattern library application.}
+	  \ressubitem{Developed a pattern library using participatory design techniques, personas, scenarios, lo-fi and hi-fi prototyping.}
+	  \ressubitem{Developed a web pattern application using parallel development environments in JSP, XSL, XML, \& BerkeleyDB XML and PHP, CSS, XHTML, MYSQL, \& JavaScript.}
+	\end{ressubsec}
+\end{ressection}
+
+\begin{ressection}{Computing Skills}
+
+	\resitem{Experience in Bash, CSS, Drupal, Excel, Git, HTML, PHP, Python, R, SAS, SPSS, Stata, SQL, Vim, XML}	
+
+\end{ressection}
+
+\input{sections/education}
+\input{sections/workshops}
+\input{sections/presentations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{ressection}{University Service}
+	\ressubitem{Research Data Curation Program Team}
+	\ressubitem{2013 Research and Academic Engagement Benchmarking Project}
+
+\end{ressection}
+
+\begin{ressection}{Memberships}
+	\resitem{International Association for Social Science Information Services and Technology}
+	\resitem{Software Carpentry Foundation}
+	\resitem{Research Data Alliance}
+\end{ressection}
+
+\end{document}

@@ -1,0 +1,147 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+\usepackage{verbatim}
+\usepackage{xfrac}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{orange}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Tim}
+\familyname{Dennis}
+%\address{4047 8th Avenue, Unit 206}{San Diego, CA}    % optional, remove the line if not wanted
+%\mobile{510-282-4204}                    % optional, remove the line if not wanted
+\email{timdennis@ucla.edu}                      % optional, remove the line if not wanted
+%\homepage{http://markliu.me}                % optional, remove the line if not wanted
+\extrainfo{GitHub: \href{https://github.com/jt14den}{jt14den}\\
+ORCID: \href{http://orcid.org/0000-0001-6632-3812}{0000-0001-6632-3812}\\
+}
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\section{Experience}
+
+\cventry{2017--present}{Director Data Science Center}{UCLA Library}{Los Angeles, CA}{}{Provide leadership}
+
+\cventry{2015--2017}{Data Services \& Collections Librarian}{UC San Diego Library}{La Jolla, CA}{}
+{Provided consultation and training on data discovery and re-use, research data management, and statistical programming to students, faculty and staff. Identified and acquired new data resources.  Collaborated with non-Library campus data service providers. Provided technology training and mentoring to library staff. Served as UCSD Official Representative to ICPSR. Administered local Dataverse instance.
+}
+
+\cventry{2006--2015}{Research Technology \& Services Specialist}{UC Berkeley Library Data Lab}{Berkeley, CA}{}
+{Provided numeric data/quantitative reasoning consultation to students and faculty. Co-designed, opened \& managed the Library Data Lab in 2008. Built Drupal sites implementing diverse domain requirements with best-practice approaches using behavioral/test driven development. Established the Library's LibTech training programming providing internal training on a diverse array of technologies including, Google Analytics, web widgets, Python, and Drupal. Coordinated the Library Technology Training Program (LibTech) for over 400 staff members}
+
+\cventry{2002--2006}{Web Developer \& Government/Data Specialist}{UC Berkeley Library}{Berkeley, CA}{}{
+Selected, installed, maintained, \& customized web collaboration applications including wikis, blogs, \& messaging.
+Administered library development server including creating and managing accounts, monitoring logs, updating applications, and monitoring usage and security logs.
+Managed multiple cross-functional teams in developing and implementing new library web based services.
+Trained users and created instruction materials on adoption of new collaboration tools.
+Provided numeric data/government information reference to students and faculty via IM, email \& face-to-face.
+}
+
+\cventry{2005--2006}{Usability Researcher}{Center for Document Engineering}{Berkeley, CA}{}{	
+Completed needs assessment, usability analysis and user testing for academic web pattern library application.
+Developed a pattern library using participatory design techniques, personas, scenarios, lo-fi and hi-fi prototyping.
+Developed a web pattern application using parallel development environments in JSP, XSL, XML, \&  and PHP, CSS, XHTML, MySQL, \& JavaScript.
+}
+
+\section{Education}
+\cventry{}{MS, Information Management \& Systems}{School of Information}{University of California - Berkeley}{Berkeley, CA}{}
+\cventry{}{BS, Sociology}{Millsaps College}{Jackson, MS}{}{}  % arguments 3 to 6 can be left empty
+
+
+\section{Technical Experience}
+\subsection{Experienced With}
+\cvcomputer{languages}{Python, R, HTML, CSS, JSON, PHP, SQL}{technologies}{MySQL, SQLite, \LaTeX{}, Bash Scripting, Git, Jupyter, R Studio, Stata, SAS, SPSS, Dataverse}
+
+\input{sections/publications}
+\input{sections/workshops}
+\input{sections/presentations}
+
+\section{Professional Service - National/International}
+\cvline{2016}{Software Carpentry Instructor}
+\cvline{2015--present}{International Association for Social Science Information Services and Technology - Web Committee}
+
+\section{University Service}
+\cventry{2015--2016}{Senior Stakeholder}{Data \& GIS Lab Redesign}{Research  Services}{UC San Diego Library}{Change the form and function of the Lab - including layout, furniture, and computing - to enable small group collaboration, mobility, and flexible studio space}
+\cventry{2016\textendash17}{Delegate}{Librarians Association of the University of California} {San Diego Division}{}{}
+\cventry{2016}{Member}{Common Knowledge Group}{UC Data Curation}{}{}
+\cventry{2015--present}{Member}{Research Data Curation Team}{UC San Diego Library}{}{}
+\cventry{2014--2015}{Technical Lead}{Library Administrative Web Services}{UC Berkeley Library}{Process improvement project to create workflows in Drupal to support Library staff travel}{}
+\cventry{2013}{Member}{Research and Academic Engagement Benchmarking Project}{UC Berkeley}{Team received Staff Appreciation and Recognition (STAR) awards for work}{}
+\cventry{2011-2013}{Member}{Integrated Library System Steering Committee}{UC Berkeley Library}{}{}
+\cventry{2011-2012}{Member}{UCB Staff Development Committee}{UC Berkeley Library}{}{}{}
+\cventry{2009-2012}{Member}{Web Advisory Group}{UC Berkeley Library}{}{Detailed activities:\newline{}%
+\begin{itemize}%
+	\item Developed tool in Drupal to gather and track user interface enhancement of Millennium System
+	\item Conducted and wrote: ``Usability Test Report for UC Berkeley Library Website''
+\end{itemize}}
+\cventry{2007}{Member}{Task Force on Doe/Moffitt Web Subject Page}{UC Berkeley Library}{}{}
+\cventry{2007}{Gardner Stacks Survey Task Force}{UC Berkeley Library}{}{}{}
+\cventry{2005-2015}{Member}{Social Sciences Council}{UC Berkeley Library}{}{}
+%\cventry{}
+
+
+\section{Memberships}
+\cvline{}{International Association for Social Science Information Services and Technology (IASSIST)}
+\cvline{}{Software Carpentry Foundation}
+\cvline{}{Research Data Alliance}
+\cvline{}{DataCure}
+
+\clearpage
+
+\iffalse
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{UCLA Library Human Resources}{22478 Charles E. Young Research Library\\Box 951575\\Los Angeles, CA 90095-1575}
+\date{July 22, 2016}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am interested in applying for the Director of the UCLA Libraries Social Science Data Archive (SSDA) position that was posted on the IASSIST-L mail list. Given my experience with research data services and background in the underlying technologies for data repositories, I believe am a great match for this position.
+
+I attended the UC Berkeley School of Information receiving a Masters of Information Management and Systems while focusing on XML technologies (including standards), information design, and user experience research. After finishing my degree, I helped plan and open the UC Berkeley Library Data Lab in 2008. Concurrently, I developed expertise in data analysis and statistical programming by taking courses on statistics, data science, and software development. I contributed 15 hours a week of consultation coverage in the Data Lab helping patrons with a range of research data support, including research design, statistical tool instruction, data discovery, understanding, management, and analysis. We consistently served over a thousand users a year, providing in-depth consultation to approximately two-thirds of those users. As my skills evolved, I helped users in more diverse technical activities, including writing Python or R scripts to scrape data or analyze text.  In addition to working with individual researchers, I regularly worked with faculty in the social sciences to integrate the Data Lab services with specific course educational outcomes. In spring 2015, I was hired as the Data Services and Collections Library at UC San Diego and continued research data consulting as part of our Research Data Curation Program (RDCP) and Data/GIS Lab. Recognizing the need for closer coordination and renewal of our Data/GIS Lab, I proposed a redesign to adopt more of a studio-style cross-disciplinary data services space. We are currently in the final stages of implementing this redesign and plan for a Fall 2016 Quarter opening. 
+
+After starting work at UCSD, I received recurring feedback through liaison librarians and researchers about the need for training in both research data management and research facilitating skills like programming and data analysis. After further talk with researchers, it was apparent that although software development has become integral for conducting research in academia, incoming graduate students and researchers had not received training in the data science skills needed to fully engage with and reproduce their research. Following this feedback, I led RDCP on developing a training strategy to include more data science topics addressing the full data lifecycle and include courses on tools like R and Python to our curriculum.  With the success and popularity of the initial one-off  data workshops, in the fall of 2015, I organized the library’s inaugural Software Carpentry Workshop, a two-day event, that offers a sequence of core computing skills and data management training for faculty researchers and graduate students. Concluding this event, I advocated successfully that the Library become a Software Carpentry Affiliate, thus enabling us to increase both the instructor pool on campus and the number of workshops we can offer. Personally, I became a ‘badged’ Software Carpentry Instructor now able to teach both the Software Carpentry and Data Carpentry curriculum.  Our current strategy is to grow the footprint of instructors and SWC workshops on campus by developing departmental stakeholders. We also are engaging with and contributing to the nascent Library Carpentry Workshop lessons and recently offered the first workshop of this kind in the US. I am deeply committed to data instruction and feel I could contribute immediately to the SSDA’s educational mission. 
+
+Another facet of my role at UCSD is working with RDCP to help understand and develop local social sciences research data collections for the data repository.  This requires a grounding in social science data and research methods and an intimate familiarity with the data archive landscape.  As a member of IASSIST since 2008 and a provider of data services using data resources from both IPUMS and ICPSR, I have a familiarity in social sciences data management and curation practices from both a researchers and curation practitioners’ perspective.  While at UC Berkeley, I became involved with the Berkeley Initiative for Transparency in Social Sciences (BITSS) and through that group the leaders behind the open science/reproducible research movement.  Through this community at Berkeley, I was connected with similar open social sciences advocates at UCSD in the School of Global Policy and Strategy (GPS) school.  This proved a bountiful connection for RDCP and led to multiple projects over the past year including a local grant to train GPS graduate research students and junior faculty in techniques of cleaning, annotating and publishing their data files to our local DAMS. Further, this relationship led to the establishment of a recurring Winter Quarter data skills series at the school. I created the curriculum and defined the criteria for assessing masters students in working in specific technologies like R and Python and using best practices for data management workflows like the TIER project from Haverford College. Most recently, the GPS school contacted me to advise and teach them on workflows in Git related to a replication service they are developing for their researchers. Applying this outreach model is something I could see working at UCLA. I think connections to larger movements like open social sciences and reproducible research methods could provide a powerful alliance with SSDA’s data management and curation mission. 
+
+Finally, I have a strong background in the technical infrastructure needed to build or maintain a repository to share, preserve, cite, explore and analyze research data. At UC Berkeley, in addition to my data services responsibilities, I was a Drupal developer for the library. I architected and built several sites for the library including back-end workflow oriented sites for managing and approving travel requests to a documentation management site for the catalog. More technically specific, I implemented modern approaches to software development, including Agile Methods, Vagrant development builds, GitHub,Travis CI, and Behavioral Driven Development with my development team. This gave me a solid understanding of the web-application development stack and current approaches to development. Further, at UCSD, I’m the administrator for our local Dataverse instance that we use for providing access to our purchased datasets. With my longstanding familiarity with ICPSR and IASSIST, I also have a solid understanding of DDI and its varied uses in describing and representing research data.   Finally, through my role with RDCP I’m also very familiar with Hydra and Fedora based repository infrastructures. UCSD has been a prime mover in developing the Portland Common Data Model that underlies the Hydra and other repository applications.  I think my experiences in a diverse array of technologies and repository approaches would provide SSDA great flexibility in responding to whatever changes might occur in the data management and curation domain. 
+
+In concluding, I look forward to talking to you more about my experiences and how they map to the desired skills and capabilities expressed in the position for Director of the UCLA Libraries Social Science Data Archive. 
+
+\makeletterclosing
+\fi
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+\end{document}
